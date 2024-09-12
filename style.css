@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+}
+header {
+    padding-top: 20px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: #fff;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+.logo {
+    width: 170px;
+}
+a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+.btn {
+    background-color: #e50914;
+    padding: 7px 12px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    transition: .4s;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.text-content {
+    padding-top: 20%;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+p {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.search-bar {
+    margin-top: 25px;
+    
+}
+.search-bar input {
+    background: transparent;
+    color: #fff;
+    width: 350px;
+    height: 60px;
+    font-size: 16px;
+     border: 1px solid #d3c8c8;
+     border-radius: 5px;
+     padding: 20px;
+     display: inline-block;
+}
+.search-bar input::placeholder {
+    font-size: 20px;
+}
+.search-bar input:focus {
+    outline:2px solid#fff;
+    outline-offset: 2px;
+}
+.search-button {
+    padding: 12px 25px 20px;
+    font-size: 27px;
+    float: none;
+    margin-left: 5px;
+}
+hr {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+}
+section {
+    padding-top: 50px;
+    background-color: black;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.row {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-1, .col-2 {
+    flex: 1;
+    align-items: center;
+    position: relative;
+}
+.row img {
+    width: 100%;
+    height: 100%;
+}
+.float-content {
+    background-color: #000000;
+    width: 250px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #d3c8c8;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.float-content p {
+    font-size: 14px;
+    line-height: 2px;
+}
+.float-content img {
+    width: 20%;
+}
+.short-width {
+    width: 400px;
+    margin-left: 130px;
+}
+.faq {
+    width: 90%;
+    margin: auto;
+}
+.faq h1{
+    text-align: center;
+}
+ 
+.faq-contents {
+    margin-top: 15px;
+}
+summary {
+    background-color: #333131;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    margin-top: 7px;
+}
+summary::after{
+    content: "\002b";
+    font-size: 25px;
+    margin-top: 20px;
+}
+summary:hover {
+    opacity: 1;
+}
+details[open] summary::after {
+    content: "\00d7";
+}
+details div {
+    background-color: #333131;
+    padding: 5px 20px 20px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+.footer-nav a {
+    color: #afaf8f;
+    text-decoration: underline;
+    display: block;
+    margin: 10px 0 20px;
+}
+select {
+    font-size: 18px;
+    padding: 5px 20px;
+    font-weight: 400;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #afaf8f;
+    border-radius: 5px;
+    outline-offset: 2px;
+}
+.footer p {
+    color: #afaf8f;
+    font-size: 16px;
+}
+
+
+
+
+
+
+ 
+
+/* Media query */
+@media (max-width:900px) {
+    header {
+        height: 80vh;
+    }
+    .container {
+        width: 90%;
+    }
+    .logo {
+        width: 100px;
+    }
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    p {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .search-bar input {
+        display: block;
+        width: 85%;
+        margin: auto;
+        height: 45px;
+    }
+    .search-button {
+        display: block;
+        padding: 10px 0px 10px;
+        font-size: 18px;
+        float: none;
+        width: 120px;
+        margin: 15px auto;
+    }
+    .row {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .reverse-column .row {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+    .short-width {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .faq {
+        width: 100%;
+    }
+   
+}  
